@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import { Routes, Route } from 'react-router-dom';
+import Blog from './Pages/Blog/Blog.jsx'
+import Book from './Pages/Book/Book.jsx'
+import Contact from './Pages/Contact/Contact.jsx'
+import Home from './Pages/Home/Home.jsx'
+
+import Footer from './common/footer/footer.jsx';
+import Header from './common/header/Header.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container'>
+        {/* Header */}
+
+        <div className="row">
+          <Header />
+        </div>
+
+        {/* Body */}
+
+        <div className="row">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/book' element={<Book />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </div>
+
+        {/* Footer */}
+
+        <div className="row">
+          <Footer />
+        </div>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
