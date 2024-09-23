@@ -33,13 +33,11 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer */}
-
-        <div className="row">
-          <Footer />
-        </div>
-
       </div>
+
+      {/* Footer */}
+      <Footer />
+
     </>
   )
 }
