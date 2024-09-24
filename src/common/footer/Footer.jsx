@@ -4,7 +4,7 @@ import './footer.css'
 function footer() {
   return (
     <>
-    <div>
+    <div className='footer-test'>
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 bg-body-secondary p-5 m-1" style={{borderRadius:"5px"}}>
           <div class="col mb-4">
             <h3 className='mb-3'>Alpine Hotels</h3>
