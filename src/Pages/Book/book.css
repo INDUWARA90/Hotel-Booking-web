@@ -1,0 +1,35 @@
+p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.container-main{
+    width: fit-content;
+    border-radius: 6px;
+    
+}
+
+input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;   
+}
+
+.Make-Res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.btn-Resevation{
+    border-radius: 4px;
+    height: 45px;
+}
+
+.btn-Resevation:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}

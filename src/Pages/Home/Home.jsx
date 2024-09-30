@@ -23,7 +23,7 @@ function Home() {
       
       <div className='About-Hotels'>
           <h1 className='text-center'>Our Hotels</h1>
-          <div className="container row  align-content-center">
+          <div className="container row  align-content-center m-lg-4">
             {
               HotelArray.map((hotel,index)=>{
                 return <HotelCard key={index} name={hotel.name} location={hotel.location} />
@@ -38,7 +38,9 @@ function Home() {
       <div className='Clinet-feedback bg-body-secondary p-5'>
           
           <div className="container row col-7 align-content-center gap-3">
-          <Clinet />
+            < Clinet />
+            < Clinet />
+          
           </div>   
       </div>
 
